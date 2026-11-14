@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Author: Breanna Gonzalez
+            Date: 11.14.2026
+            Purpose: Create the structure to my Java project HTML page.
+        -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Java Project Setup" />
+        <meta name="author" content="Breanna Gonzalez" />
+
+        <title>Project Setup</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="modernizr.custom.05819.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Breanna Gonzalez, Project Setup</h1>
+
+            <!-- Welcome Message -->
+            <p id="welcomeMessage">Welcome to my project page!</p>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Welcome to my project page! My name is Breanna Gonzalez,
+                    and I am a Web Development student. I have a passion
+                    for learning and consistent progression.
+                </p>
+            </section>
+
+            
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>
+                    Here are the highlights of the projects and assessments
+                    I have worked on that demonstrate my knowledge and progression.
+                </p>
+
+                <div class="project">
+                    <h3>High-Fidelity Interface Design</h3>
+                    <p>
+                        This project focuses on improving user interactivity
+                        and accessibility within an existing functional website
+                        or mobile application. It demonstrates high-fidelity
+                        interface designs and user experience improvements.
+                    </p>
+                    <a href="https://www.figma.com/make/27BfnRp2JVRgAu8QwSvOy5/File--3--%E2%80%9CInterface-Design-I---High-Fidelity-Interface-Designs%E2%80%9D?t=vcUtPG0Ce5lP7WIj-20&fullscreen=1"
+                    target="_blank" rel="noopener noreferrer">
+                        View Figma Project
+                    </a>
+                </div>
+
+                <div class="project">
+                    <h3>PHP Application - SDC310 Final</h3>
+                    <p>
+                        This PHP application connects to a local host,
+                        receives user input, and stores information for
+                        future access and updates. It demonstrates
+                        application development and data management.
+                    </p>
+                    <a href="https://github.com/brenordq/sdc310_final.git"
+                    target="_blank" rel="noopener noreferrer">
+                        View PHP Project on GitHub
+                    </a>
+                </div>
+
+                <div class="project">
+                    <h3>Object-Oriented C# Performance Assessment</h3>
+                    <p>
+                        This assessment demonstrates object-oriented programming
+                        concepts within a main application class. It includes
+                        constructors, properties, and class methods while
+                        managing and updating employee records.
+                    </p>
+                    <a href="https://github.com/brenordq/SDC220_1.8PA.git"
+                    target="_blank" rel="noopener noreferrer">
+                        View C# Project on GitHub
+                    </a>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Utilize the form below if you would like to
+                    get in contact with me.
+                </p>
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+
+                    <br /><br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+
+                    <br /><br />
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" />
+
+                    <br /><br />
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" />
+
+                    <br /><br />
+
+                    <label for="message">Message:</label>
+                    <br />
+                    <textarea id="message" name="message"
+                        rows="5" cols="40"></textarea>
+
+                    <br /><br />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </article>
+
+        <!-- JavaScript -->
+        <script>
+            // Prompt the visitor for their name
+            let userName = prompt("Please enter your name:");
+
+            // Find the welcome message on the page
+            let welcome = document.getElementById("welcomeMessage");
+
+            // Update the welcome message
+            if (userName !== null && userName.trim() !== "") {
+                welcome.textContent = "Welcome to my project page, " +
+                    userName + "!";
+            } else {
+                welcome.textContent = "Welcome to my project page!";
+            }
+        </script>
+    </body>
+</html>
