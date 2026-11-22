@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <!--
             Author: Breanna Gonzalez
-            Date: 11.14.2026
-            Purpose: Create the structure to my Java project HTML page.
+            Date: 11.22.2026
+            Purpose: Portfolio page demonstrating JavaScript conditional logic,
+                 loops, dark mode, and form interactivity.
         -->
 
         <meta charset="utf-8" />
@@ -13,7 +13,7 @@
         <meta name="description" content="Java Project Setup" />
         <meta name="author" content="Breanna Gonzalez" />
 
-        <title>Project Setup</title>
+        <title>Breanna Gonzalez - Control Flow Implementation</title>
 
         <link rel="stylesheet" href="styles.css" />
         <script src="modernizr.custom.05819.js"></script>
@@ -23,137 +23,234 @@
         <header>
             <h1>Breanna Gonzalez, Project Setup</h1>
 
-            <!-- Welcome Message -->
-            <p id="welcomeMessage">Welcome to my project page!</p>
+             <!-- Dark mode checkbox controls the page color theme. -->
+        <label id="darkModeControl">
+            <input type="checkbox" id="darkModeToggle">
+            Dark Mode
+        </label>
 
-            <!-- Navigation Menu -->
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <!-- Welcome message is personalized when a visitor enters a name. -->
+        <p id="welcomeMessage">Welcome to my project page!</p>
+
+        <!-- Main navigation links to each portfolio section. -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured">Featured Content</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         </header>
 
         <article>
-            <!-- About Section -->
-            <section id="about">
-                <h2>About</h2>
+            <!-- About section includes a skills list generated with a loop. -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Welcome to my project page! My name is Breanna Gonzalez,
+                and I am a Web Development student. I have a passion
+                for learning and consistent progression.
+            </p>
+
+            <h3>Skills and Technologies</h3>
+            <ul id="skillsList"></ul>
+        </section>
+
+        <!-- Featured Content sections are displayed conditionally. -->
+        <section id="featured">
+            <h2>Featured Content</h2>
+
+            <div id="universityResources" class="featured-resource">
+                <h3>University Resources</h3>
                 <p>
-                    Welcome to my project page! My name is Breanna Gonzalez,
-                    and I am a Web Development student. I have a passion
-                    for learning and consistent progression.
+                    Visit the ECPI University website for information about
+                    academic programs and student resources.
                 </p>
-            </section>
+                <a href="https://www.ecpi.edu/" target="_blank" rel="noopener noreferrer">
+                    ECPI University Program Home Page
+                </a>
+            </div>
 
-            
-            <!-- Projects Section -->
-            <section id="projects">
-                <h2>Projects</h2>
+            <div id="personalProjects" class="featured-resource">
+                <h3>Personal Projects</h3>
+                <p>Select an image below to visit one of my project pages.</p>
+
+                <a href="https://www.figma.com/make/27BfnRp2JVRgAu8QwSvOy5/File--3--%E2%80%9CInterface-Design-I---High-Fidelity-Interface-Designs%E2%80%9D?t=vcUtPG0Ce5lP7WIj-20&fullscreen=1"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-image"
+                         src="https://img.shields.io/badge/Figma-High--Fidelity%20Interface%20Designs-9747FF?style=for-the-badge&logo=figma&logoColor=white"
+                         alt="Open my high-fidelity interface design project">
+                </a>
+
+                <a href="https://github.com/brenordq/sdc310_final"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-image"
+                         src="https://img.shields.io/badge/GitHub-PHP%20Application-181717?style=for-the-badge&logo=github&logoColor=white"
+                         alt="Open my SDC310 PHP application on GitHub">
+                </a>
+
+                <a href="https://github.com/brenordq/SDC220_1.8PA"
+                   target="_blank" rel="noopener noreferrer">
+                    <img class="project-image"
+                         src="https://img.shields.io/badge/GitHub-C%23%20Project-181717?style=for-the-badge&logo=github&logoColor=white"
+                         alt="Open my C sharp project on GitHub">
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>
+                Here are the highlights of the projects and assessments
+                I have worked on that demonstrate my knowledge and progression.
+                Please enjoy reviewing my work and feel free to reach out to me with any questions!
+            </p>
+
+            <div class="project">
+                <h3>High-Fidelity Interface Design</h3>
                 <p>
-                    Here are the highlights of the projects and assessments
-                    I have worked on that demonstrate my knowledge and progression.
+                    This project focuses on improving user interactivity
+                    and accessibility within an existing functional website
+                    or mobile application. It demonstrates high-fidelity
+                    interface designs and user experience improvements.
                 </p>
+                <a href="https://www.figma.com/make/27BfnRp2JVRgAu8QwSvOy5/File--3--%E2%80%9CInterface-Design-I---High-Fidelity-Interface-Designs%E2%80%9D?t=vcUtPG0Ce5lP7WIj-20&fullscreen=1"
+                   target="_blank" rel="noopener noreferrer">
+                    View Figma Project
+                </a>
+            </div>
 
-                <div class="project">
-                    <h3>High-Fidelity Interface Design</h3>
-                    <p>
-                        This project focuses on improving user interactivity
-                        and accessibility within an existing functional website
-                        or mobile application. It demonstrates high-fidelity
-                        interface designs and user experience improvements.
-                    </p>
-                    <a href="https://www.figma.com/make/27BfnRp2JVRgAu8QwSvOy5/File--3--%E2%80%9CInterface-Design-I---High-Fidelity-Interface-Designs%E2%80%9D?t=vcUtPG0Ce5lP7WIj-20&fullscreen=1"
-                    target="_blank" rel="noopener noreferrer">
-                        View Figma Project
-                    </a>
-                </div>
-
-                <div class="project">
-                    <h3>PHP Application - SDC310 Final</h3>
-                    <p>
-                        This PHP application connects to a local host,
-                        receives user input, and stores information for
-                        future access and updates. It demonstrates
-                        application development and data management.
-                    </p>
-                    <a href="https://github.com/brenordq/sdc310_final.git"
-                    target="_blank" rel="noopener noreferrer">
-                        View PHP Project on GitHub
-                    </a>
-                </div>
-
-                <div class="project">
-                    <h3>Object-Oriented C# Performance Assessment</h3>
-                    <p>
-                        This assessment demonstrates object-oriented programming
-                        concepts within a main application class. It includes
-                        constructors, properties, and class methods while
-                        managing and updating employee records.
-                    </p>
-                    <a href="https://github.com/brenordq/SDC220_1.8PA.git"
-                    target="_blank" rel="noopener noreferrer">
-                        View C# Project on GitHub
-                    </a>
-                </div>
-            </section>
-            <!-- Contact Section -->
-            <section id="contact">
-                <h2>Contact</h2>
+            <div class="project">
+                <h3>PHP Application - SDC310 Final</h3>
                 <p>
-                    Utilize the form below if you would like to
-                    get in contact with me.
+                    This PHP application connects to a local host,
+                    receives user input, and stores information for
+                    future access and updates. It demonstrates
+                    application development and data management.
                 </p>
+                <a href="https://github.com/brenordq/sdc310_final"
+                   target="_blank" rel="noopener noreferrer">
+                    View PHP Project on GitHub
+                </a>
+            </div>
 
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" />
+            <div class="project">
+                <h3>Object-Oriented C# Performance Assessment</h3>
+                <p>
+                    This assessment demonstrates object-oriented programming
+                    concepts within a main application class. It includes
+                    constructors, properties, and class methods while
+                    managing and updating employee records.
+                </p>
+                <a href="https://github.com/brenordq/SDC220_1.8PA"
+                   target="_blank" rel="noopener noreferrer">
+                    View C# Project on GitHub
+                </a>
+            </div>
+        </section>
 
-                    <br /><br />
+        <!-- Contact form displays a confirmation; it does not send an email. -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Utilize the form below if you would like to get in contact with me.</p>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" />
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                    <br /><br />
+                <br><br>
 
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                    <br /><br />
+                <br><br>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" />
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
 
-                    <br /><br />
+                <br><br>
 
-                    <label for="message">Message:</label>
-                    <br />
-                    <textarea id="message" name="message"
-                        rows="5" cols="40"></textarea>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
 
-                    <br /><br />
+                <br><br>
 
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </article>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
 
-        <!-- JavaScript -->
-        <script>
-            // Prompt the visitor for their name
-            let userName = prompt("Please enter your name:");
+                <br><br>
 
-            // Find the welcome message on the page
-            let welcome = document.getElementById("welcomeMessage");
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+            <p id="formConfirmation" aria-live="polite"></p>
+        </section>
+    </article>
 
-            // Update the welcome message
-            if (userName !== null && userName.trim() !== "") {
-                welcome.textContent = "Welcome to my project page, " +
-                    userName + "!";
+    <script>
+        // Ask the visitor for their name and personalize the welcome message.
+        const userName = prompt("Please enter your name:");
+        const welcome = document.getElementById("welcomeMessage");
+
+        if (userName !== null && userName.trim() !== "") {
+            welcome.textContent = "Welcome to my project page, " + userName.trim() + "!";
+        } else {
+            welcome.textContent = "Welcome to my project page!";
+        }
+
+        // Store at least five skills in an array and use a for loop to list them.
+        const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub"];
+        const skillsList = document.getElementById("skillsList");
+
+        for (let i = 0; i < skills.length; i++) {
+            const skillItem = document.createElement("li");
+            skillItem.textContent = skills[i];
+            skillsList.appendChild(skillItem);
+        }
+
+        // Count the projects and choose which Featured Content divs to display.
+        const projectCount = document.querySelectorAll("#projects .project").length;
+        const universityResources = document.getElementById("universityResources");
+        const personalProjects = document.getElementById("personalProjects");
+
+        if (projectCount < 3) {
+            universityResources.style.display = "block";
+            personalProjects.style.display = "block";
+        } else {
+            personalProjects.style.display = "block";
+            universityResources.style.display = "none";
+        }
+
+        // Toggle the dark-mode class when the checkbox changes.
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        darkModeToggle.addEventListener("change", function () {
+            if (darkModeToggle.checked) {
+                document.body.classList.add("dark-mode");
             } else {
-                welcome.textContent = "Welcome to my project page!";
+                document.body.classList.remove("dark-mode");
             }
-        </script>
-    </body>
+        });
+
+        // Prevent a page refresh and show a confirmation using the entered name.
+        const submitButton = document.querySelector("#contactForm button[type='submit']");
+
+        submitButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const contactName = document.getElementById("name").value.trim();
+
+            if (contactName === "") {
+                alert("Please enter your name before submitting the form.");
+                return;
+            }
+
+            const confirmation = "Thank you, " + contactName + ", your message has been sent!";
+            document.getElementById("formConfirmation").textContent = confirmation;
+            alert(confirmation);
+        });
+    </script>
+</body>
 </html>
