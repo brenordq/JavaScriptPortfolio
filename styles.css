@@ -1,3 +1,4 @@
+
 .project {
     margin: 20px 0;
     padding: 15px;
@@ -16,4 +17,86 @@
 .project a {
     display: inline-block;
     margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, article, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header, section {
+    margin-bottom: 24px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #1457a6;
+}
+
+.featured-resource {
+    padding: 18px;
+    margin: 16px 0;
+    border: 2px solid #356c9b;
+    border-left: 8px solid #356c9b;
+    border-radius: 8px;
+    background-color: #eaf3fb;
+}
+
+.featured-resource h3 {
+    margin-top: 0;
+}
+
+.project-image {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 8px 12px 8px 0;
+    border-radius: 6px;
+}
+
+.dark-mode {
+    background-color: #171a21;
+    color: #f1f1f1;
+}
+
+.dark-mode a {
+    color: #8fc5ff;
+}
+
+.dark-mode .featured-resource {
+    background-color: #252f3d;
+    border-color: #8fc5ff;
+}
+
+.dark-mode .project {
+    background-color: #252f3d;
+    border-color: #8fc5ff;
+}
+
+input, textarea {
+    max-width: 100%;
+}
+
+#darkModeControl {
+    margin: 12px 0;
+}
+
+#formConfirmation {
+    font-weight: bold;
 }
